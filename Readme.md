@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Егор Байдашев](https://up.htmlacademy.ru/adaptive/19/user/684117).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий(sench)Железцов](https://htmlacademy.ru/profile/id983299).
 
 ---
 
