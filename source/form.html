@@ -30,7 +30,53 @@
       </nav>
     </header>
     <main class="main-form">
-      <div class="intro"></div>
+      <section class="feedback">
+        <div class="feedback__intro">
+          <h1 class="feedback__title">Оставьте свой отзыв</h1>
+          <p class="feedback__introduction">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form class="feedback__form">
+          <fieldset class="feedback__name name">
+            <legend class="name__title">Представьтесь</legend>
+            <ul class="name__list">
+              <li class="name__item">
+                <label class="name__label" for="name-name">Имя*:</label>
+                <input class="name__input" id="name-name" type="text" name="name-name" value="Петр">
+              </li>
+              <li class="name__item">
+                <label class="name__label" for="name-surname">Фамилия*:</label>
+                <input class="name__input" id="name-surname" type="text" name="name-surname" value="Иванов">
+              </li>
+              <li class="name__item">
+                <label class="name__label" for="name-patronymic">Отчество:</label>
+                <input class="name__input" id="name-patronymic" type="text" name="name-patronymic" value="Александрович">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__contact-info contact-info">
+            <legend class="contact-info__title">Контактная информация:</legend>
+            <ul class="contact-info__list">
+              <li class="contact-info__item">
+                <label class="contact-info__label" for="phone-number">Контактный телефон*:</label>
+                <div class="contact-info__block">
+                  <input class="contact-info__input" id="phone-number" type="text" name="phone-number" value="Введите телефон">
+                  <span class="contact-info__unit contact-info__unit--icon-phone"></span>
+                </div>
+              </li>
+              <li class="contact-info__item">
+                <label class="contact-info__label" for="e-mail">Электронная почта*:</label>
+                <div class="contact-info__block">
+                  <input class="contact-info__input" id="e-mail" type="text" name="e-mail" value="Введите e-mail">
+                  <span class="contact-info__unit contact-info__unit--icon-mail"></span>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__impression impression"></fieldset>
+          <fieldset class="feedback__visits visits"></fieldset>
+          <fieldset class="feedback__emotions emotions"></fieldset>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
