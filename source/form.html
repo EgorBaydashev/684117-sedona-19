@@ -35,17 +35,17 @@
           <h1 class="feedback__title">Оставьте свой отзыв</h1>
           <p class="feedback__introduction">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
-        <form class="feedback__form">
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="feedback__name name">
             <legend class="name__title">Представьтесь</legend>
             <ul class="name__list">
               <li class="name__item">
                 <label class="name__label" for="name-name">Имя*:</label>
-                <input class="name__input" id="name-name" type="text" name="name-name" value="Петр">
+                <input class="name__input" id="name-name" type="text" name="name-name" value="Петр" required>
               </li>
               <li class="name__item">
                 <label class="name__label" for="name-surname">Фамилия*:</label>
-                <input class="name__input" id="name-surname" type="text" name="name-surname" value="Иванов">
+                <input class="name__input" id="name-surname" type="text" name="name-surname" value="Иванов" required>
               </li>
               <li class="name__item">
                 <label class="name__label" for="name-patronymic">Отчество:</label>
@@ -57,24 +57,80 @@
             <legend class="contact-info__title">Контактная информация:</legend>
             <ul class="contact-info__list">
               <li class="contact-info__item">
-                <label class="contact-info__label" for="phone-number">Контактный телефон*:</label>
+                <label class="contact-info__label" for="tel">Контактный телефон*:</label>
                 <div class="contact-info__block">
-                  <input class="contact-info__input" id="phone-number" type="text" name="phone-number" value="Введите телефон">
+                  <input class="contact-info__input" id="tel" type="tel" name="tel" value="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                   <span class="contact-info__unit contact-info__unit--icon-phone"></span>
                 </div>
               </li>
               <li class="contact-info__item">
-                <label class="contact-info__label" for="e-mail">Электронная почта*:</label>
+                <label class="contact-info__label" for="email">Электронная почта*:</label>
                 <div class="contact-info__block">
-                  <input class="contact-info__input" id="e-mail" type="text" name="e-mail" value="Введите e-mail">
+                  <input class="contact-info__input" id="email" type="email" name="email" value="Введите e-mail" required>
                   <span class="contact-info__unit contact-info__unit--icon-mail"></span>
                 </div>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__impression impression"></fieldset>
-          <fieldset class="feedback__visits visits"></fieldset>
-          <fieldset class="feedback__emotions emotions"></fieldset>
+          <fieldset class="feedback__impression impression">
+            <legend class="impression__title">Ваше общее впечатление:</legend>
+            <ul class="impression__list">
+              <li class="impression__item">
+                <input class="impression__input" type="radio" id="positiv" name="impression" value="positiv" checked>
+                <label class="impression__label" for="positiv">Скорее положительное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__input" type="radio" id="negative" name="impression" value="negative">
+                <label class="impression__label" for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__input" type="radio" id="unknown" name="impression" value="unknown">
+                <label class="impression__label" for="unknown">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__visits visits">
+            <legend class="visits__title">Посещенные достопримечательности:</legend>
+            <ul class="visits__list">
+              <li class="visits__item">
+                <input class="visits__input" type="checkbox" id="bridge" name="bridge" checked>
+                <label class="visits__label" for="bridge">Мост Дьявола</label>
+              </li>
+              <li class="visits__item">
+                <input class="visits__input" type="checkbox" id="mountain" name="mountain" checked>
+                <label class="visits__label" for="mountain">Гора-Колокол</label>
+              </li>
+              <li class="visits__item">
+                <input class="visits__input" type="checkbox" id="park" name="park" checked>
+                <label class="visits__label" for="park">Слайд-парк</label>
+              </li>
+              <li class="visits__item">
+                <input class="visits__input" type="checkbox" id="rocks" name="rocks">
+                <label class="visits__label" for="rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__emotions emotions">
+            <legend class="emotions__title">Опишите свои эмоции:</legend>
+            <textarea class="emotions__text" name="emotions-text">Опишите подробно все свои восторги</textarea>
+          </fieldset>
+          <div class="send">
+            <button class="send__btn" type="submit">Отправить отзыв</button>
+          </div>
+          <div class="failure-popup">
+            <h2 class="failure-popup__title">Что-то пошло не так!</h2>
+            <p class="failure-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="failure-popup__btn">Ок</button>
+          </div>
+          <div class="success-popup">
+            <div class="success-popup__message">
+              <h2 class="success-popup__title">Ваш отзыв отправлен!</h2>
+              <p class="success-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+            </div>
+            <div class="success-popup__close">
+              <button class="success-popup__btn" type="button">Закрыть окно</button>
+            </div>
+          </div>
         </form>
       </section>
     </main>
