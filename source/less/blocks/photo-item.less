@@ -1,0 +1,38 @@
+.photo-item {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .border-top(@gray-border2);
+  &:last-child {
+    .border-bottom(@gray-border2);
+  }
+}
+
+.photo-item__title {
+  .reset();
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.photo-item__author {
+  .reset();
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+  color: @light-black;
+}
+
+.photo-item__like {
+  .reset();
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 37px;
+}
