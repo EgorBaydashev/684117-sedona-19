@@ -1,0 +1,111 @@
+//---------------------------------------------------ШРИФТЫ---------------------------------------
+@font-family: "PT Sans", "Arial", sans-serif;
+@base-font-size: 14px;
+@base-line-height: 24px;
+@base-font-weight: 400;
+@bold-font-weight: 700;
+@text-transform-up: uppercase;
+@text-transform-low: lowercase;
+//---------------------------------------------------ЦВЕТА----------------------------------------
+@black: #000000;
+@light-black: #333333;
+@white: #ffffff;
+@dark-white: #fefefe;
+
+//СИНИЕ ЦВЕТА
+@blue: #81b3d2;
+@blue-darker: #669ec0;
+@blue-dark: #5496bd;
+
+//крест-закрытие меню
+@blue-x-down: #a7cae0;
+@blue-x-hover: #cde1ed;
+
+//нажатие синей кнопки, рамка элемента меню
+@blue-button-down: #88b6d1;
+@blue-border-dark: #678fa8;
+@blue-border-light: #9ac2db;
+
+//моб.меню бургер
+@blue-burger-hover: #b3d1e4;
+@blue-burger-down: #d9e8f1;
+
+//СЕРЫЕ ЦВЕТА
+@gray: #eeeeee;
+@gray-border2: #e5e5e5;
+@gray-border: #d6d6d6;
+
+//ШИРИНА
+@width-page-container: 320px;
+
+//-------------------------------------------------------МИКСИНЫ-------------------------------------
+.list-style() {
+  list-style: none;
+}
+
+.border-top(@color) {
+  border-top: 1px solid @color;
+}
+
+.border-bottom(@color) {
+  border-bottom: 1px solid @color;
+}
+
+.middle-font() {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.font() {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: @light-black;
+}
+
+.reset() {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+//----------------------------------------------ГЛОБАЛЬНЫЕ ТЕГИ И КЛАССЫ--------------------------------
+body {
+  margin: 0;
+  padding: 0;
+  font-family: @font-family;
+  font-size: @base-font-size;
+  line-height: @base-line-height;
+  font-weight: @base-font-weight;
+  color: @black;
+  text-transform: @text-transform-up;
+  background-color: @white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
