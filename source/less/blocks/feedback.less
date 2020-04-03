@@ -1,3 +1,7 @@
+.feedback__intro {
+  .border-bottom(@gray-border2);
+}
+
 .feedback__pictures {
   min-height: 158px;
   background:
@@ -6,4 +10,29 @@
     url("../../img/bg-back-mobile@1x.jpg") no-repeat 50% 100%;
   background-size: 229px 39px, 1200px 57px, 768px 389px;
   background-color: @blue;
+}
+
+.feedback__title {
+  .reset();
+  padding-top: 40px;
+  padding-bottom: 31px;
+  .middle-font();
+}
+
+.feedback__introduction {
+  .reset();
+  .font();
+  line-height: 24px;
+  padding-bottom: 19px;
+}
+
+.feedback__name,
+.feedback__contact-info,
+.feedback__impression,
+.feedback__visits,
+.feedback__emotions {
+  .reset();
+  margin-top: 20px;
+  border: none;
+  .border-bottom(@gray-border2);
 }
