@@ -37,3 +37,103 @@
   text-align: left;
   padding-left: 37px;
 }
+
+@media (min-width: @tablet-width) {
+  .photo-item {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .photo-item__sunset {
+    display: block;
+    width: 648px;
+    height: 400px;
+    background-image: url("../../img/photo-sunset-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 648px 400px;
+  }
+
+  .photo-item__pic {
+    display: none;
+  }
+
+  .photo-item__block {
+    display: flex;
+    width: auto;
+    padding-top: 17px;
+    padding-bottom: 19px;
+    padding-left: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .photo-item__cactus {
+    display: block;
+    width: 324px;
+    height: 267px;
+    background-image: url("../../img/photo-cactus-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 324px 267px;
+  }
+
+  .photo-item__roads {
+    display: block;
+    width: 324px;
+    height: 267px;
+    background-image: url("../../img/photo-roads-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 324px 267px;
+  }
+
+  .photo-item__bridge {
+    display: block;
+    width: 324px;
+    height: 267px;
+    background-image: url("../../img/photo-bridge-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 324px 267px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-item__sunset {
+    width: 1200px;
+    height: 400px;
+    background-image: url("../../img/photo-sunset-desktop@1x.jpg");
+    background-size: 1200px 400px;
+  }
+
+  .photo-item__block {
+    color: @white;
+    padding-left: 21px;
+    background-color: rgba(178, 178, 178, 0.3);
+  }
+
+  .photo-item__author {
+    color: @white;
+  }
+
+  .photo-item__cactus {
+    width: 400px;
+    background-image: url("../../img/photo-cactus-desktop@1x.jpg");
+    background-size: 400px 267px;
+  }
+
+  .photo-item__roads {
+    width: 400px;
+    background-image: url("../../img/photo-roads-desktop@1x.jpg");
+    background-size: 400px 267px;
+  }
+
+  .photo-item__bridge {
+    width: 400px;
+    background-image: url("../../img/photo-bridge-desktop@1x.jpg");
+    background-size: 400px 267px;
+  }
+}

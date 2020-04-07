@@ -20,3 +20,65 @@
   .font();
   text-align: left;
 }
+
+@media (min-width: @tablet-width) {
+  .advice__list {
+  display: flex;
+  }
+
+  .advice__item {
+    width: 256px;
+    padding-top: 160px;
+    padding-bottom: 64px;
+
+    &:first-child {
+      padding-right: 47px;
+      padding-left: 47px;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    &:last-child {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  .advice__title {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 26px;
+  }
+
+  .advice__text {
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advice__item {
+    width: 400px;
+    padding-top: 163px;
+    padding-bottom: 86px;
+
+    &:first-child {
+      padding-right: 70px;
+      padding-left: 70px;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+      padding-right: 56px;
+      padding-left: 56px;
+    }
+
+    &:last-child {
+      padding-right: 92px;
+      padding-left: 92px;
+    }
+  }
+}

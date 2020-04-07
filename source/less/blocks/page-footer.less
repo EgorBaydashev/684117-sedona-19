@@ -1,6 +1,24 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   min-height: 243px;
   background-color: @dark-white;
   padding-left: 84px;
   padding-right: 84px;
+}
+
+.page-footer__social {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    min-height: 120px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
