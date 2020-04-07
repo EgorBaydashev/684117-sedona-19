@@ -33,3 +33,62 @@
   .reset();
   .font();
 }
+
+@media (min-width: @tablet-width) {
+  .others {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .others__list {
+    display: flex;
+  }
+
+  .others__item {
+    width: 256px;
+    padding-top: 47px;
+    padding-bottom: 47px;
+
+    &--border {
+      border: none;
+    }
+  }
+
+  .others__title {
+    display: block;
+    width: 124px;
+    margin: 0 auto;
+    font-size: 21px;
+    margin-bottom: 13px;
+  }
+
+  .others__number {
+    margin-bottom: 24px;
+  }
+
+  .others__text {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .others__item {
+    width: 400px;
+    padding-top: 48px;
+    padding-bottom: 66px;
+  }
+
+  .others__title {
+    margin-bottom: 14px;
+  }
+
+  .others__number {
+    margin-bottom: 25px;
+  }
+
+  .others__text {
+    width: 286px;
+  }
+}

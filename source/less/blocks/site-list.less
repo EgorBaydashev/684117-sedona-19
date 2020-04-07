@@ -28,3 +28,45 @@
 .site-list__link {
   color: @white;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: 768px;
+    display: flex;
+  }
+
+  .site-list__item {
+    width: 153px;
+    background-color: @white;
+
+    &--border {
+      border: none;
+    }
+
+    &:nth-child(2) {
+      margin-right: 156px;
+    }
+  }
+
+  .site-list__link {
+    .middle-font();
+    font-size: 14px;
+    color: @black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 1200px;
+    display: flex;
+  }
+
+  .site-list__item {
+    width: 239px;
+    background-color: @white;
+
+    &:nth-child(2) {
+      margin-right: 244px;
+    }
+  }
+}
