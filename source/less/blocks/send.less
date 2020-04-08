@@ -7,5 +7,40 @@
 }
 
 .send__btn {
+  font-family: inherit;
   text-align: center;
+  background-color: @blue;
+}
+
+.send__text {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .send {
+    position: absolute;
+    top: 1220px;
+    left: 60px;
+    display: flex;
+    padding-top: 58px;
+    padding-bottom: 61px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .send__btn {
+    font-family: inherit;
+    text-align: center;
+    background-color: @blue;
+  }
+
+  .send__text {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .send {
+    padding-bottom: 66px;
+  }
 }
