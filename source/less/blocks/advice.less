@@ -1,57 +1,65 @@
 .advice__list {
   .reset();
   list-style: none;
+  padding-bottom: 47px;
 }
 
 .advice__item {
   padding-top: 37px;
   padding-left: 70px;
-  padding-right: 50px;
+  padding-right: 20px;
 }
 
 .advice__title {
   .reset();
   .middle-font();
   text-align: left;
+  margin-bottom: 15px;
 }
 
 .advice__text {
   .reset();
   .font();
   text-align: left;
+  margin-bottom: -10px;
 }
 
 @media (min-width: @tablet-width) {
   .advice__list {
     display: flex;
+    padding-bottom: 60px;
   }
 
   .advice__item {
     width: 256px;
-    padding-top: 160px;
-    padding-bottom: 64px;
+    padding-top: 159px;
+    padding-left: 0;
+    padding-right: 0;
 
-    &:first-child {
-      padding-right: 47px;
-      padding-left: 47px;
+    &:first-child .advice__text {
+      width: 156px;
+      margin: 0 auto;
     }
 
     &:nth-child(2) {
-      order: 3;
-      padding-right: 50px;
-      padding-left: 50px;
+      order: 1;
     }
 
-    &:last-child {
-      padding-right: 20px;
-      padding-left: 20px;
+    &:nth-child(2) .advice__text {
+      width: 167px;
+      margin: 0 auto;
+    }
+
+    &:last-child .advice__text {
+      width: 152px;
+      margin: 0 auto;
     }
   }
 
   .advice__title {
     font-size: 21px;
     text-align: center;
-    margin-bottom: 26px;
+    margin-bottom: 21px;
   }
 
   .advice__text {
@@ -60,25 +68,33 @@
 }
 
 @media (min-width: @desktop-width) {
+  .advice__list {
+    padding-bottom: 0;
+  }
+
   .advice__item {
     width: 400px;
-    padding-top: 163px;
-    padding-bottom: 86px;
+    padding-top: 160px;
+    padding-bottom: 82px;
 
-    &:first-child {
-      padding-right: 70px;
-      padding-left: 70px;
+    &:first-child .advice__text {
+      width: 256px;
+      margin: 0 auto;
     }
 
     &:nth-child(2) {
-      order: 3;
-      padding-right: 56px;
-      padding-left: 56px;
+      order: 1;
     }
 
-    &:last-child {
-      padding-right: 92px;
-      padding-left: 92px;
+    &:nth-child(2) .advice__text {
+      width: 219px;
+      margin: 0 auto;
+      white-space: pre;
+    }
+
+    &:last-child .advice__text {
+      width: 286px;
+      margin: 0 auto;
     }
   }
 }

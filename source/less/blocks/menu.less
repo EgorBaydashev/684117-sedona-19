@@ -1,32 +1,35 @@
-.menu__wrapper {
-  width: 320px;
-  min-height: 115px;
-  background-color: @white;
+.menu {
+  margin-bottom: 51px;
 }
 
 .menu__block {
   width: 280px;
   min-height: 66px;
+  margin-top: -10px;
+  margin-left: 20px;
   background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
-  .menu__wrapper {
-    width: 648px;
-    min-height: 40px;
+  .menu {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    margin-bottom: 0;
   }
 
   .menu__block {
     width: 648px;
     min-height: 93px;
+    margin-top: 0;
     background-color: rgba(102, 102, 102, 0.6);
   }
 }
 
 @media (min-width: @desktop-width) {
-  .menu__wrapper {
-    width: 800px;
-    min-height: 85px;
+  .menu {
+    left: 180px;
+    margin-bottom: 0;
   }
 
   .menu__block {

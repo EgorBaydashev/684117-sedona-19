@@ -7,6 +7,7 @@
   padding-bottom: 43px;
   padding-right: 20px;
   padding-left: 20px;
+  margin-top: -10px;
   background-image: url("../../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -17,20 +18,24 @@
   .reset();
   .middle-font();
   color: @white;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .first__number {
   display: block;
   .font();
   color: @white;
-  margin-bottom: 19px;
+  margin-bottom: 10px;
 }
 
 .first__text {
   .font();
   .reset();
   color: @white;
+}
+
+.first__picture {
+  max-height: 256px;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,7 +46,7 @@
   .first__block {
     box-sizing: border-box;
     width: 256px;
-    padding-top: 44px;
+    padding-top: 55px;
     padding-bottom: 42px;
     padding-right: 45px;
     padding-left: 45px;
@@ -50,7 +55,7 @@
 
   .first__title {
     font-size: 21px;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
   }
 
   .first__number {
@@ -73,8 +78,8 @@
 @media (min-width: @desktop-width) {
   .first__block {
     width: 400px;
-    padding-top: 54px;
-    padding-bottom: 61px;
+    padding-top: 64px;
+    padding-bottom: 57px;
     padding-right: 65px;
     padding-left: 65px;
   }
@@ -83,10 +88,11 @@
     display: block;
     width: 125px;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
 
   .first__number {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .first__picture {
