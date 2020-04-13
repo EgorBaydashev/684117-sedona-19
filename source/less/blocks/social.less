@@ -1,10 +1,56 @@
 .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 151px;
+  margin-bottom: 42px;
 }
 
 .social__link {
   display: block;
   background-color: @blue;
+  text-align: center;
   width: 46px;
   height: 48px;
+
+  &--twitter,
+  &--facebook,
+  &--youtube {
+    fill: @white;
+  }
+
+  &--twitter svg {
+    padding-top: 16px;
+  }
+
+  &--facebook svg {
+    padding-top: 14px;
+  }
+
+  &--youtube svg {
+    padding-top: 16px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin-bottom: 0;
+    margin-right: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
 }

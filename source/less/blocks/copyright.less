@@ -1,4 +1,5 @@
 .copyright {
+  display: flex;
   width: 130px;
 }
 
@@ -7,4 +8,23 @@
   .font();
   line-height: 26px;
   text-align: left;
+  margin-right: 14px;
+}
+
+.copyright__link {
+  cursor: pointer;
+
+  &:hover {
+    fill: @blue;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding-top: 10px;
+  }
 }

@@ -1,7 +1,7 @@
 .others {
   background-color: @gray;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 34px;
+  padding-left: 34px;
 }
 
 .others__list {
@@ -10,8 +10,8 @@
 }
 
 .others__item {
-  padding-top: 29px;
-  padding-bottom: 30px;
+  padding-top: 31px;
+  padding-bottom: 25px;
 
   &--border {
     .border-top(@gray-border);
@@ -22,11 +22,13 @@
 .others__title {
   .reset();
   .middle-font();
+  margin-bottom: 8px;
 }
 
 .others__number {
   display: block;
   .font();
+  margin-bottom: 15px;
 }
 
 .others__text {
@@ -46,11 +48,16 @@
 
   .others__item {
     width: 256px;
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 
     &--border {
       border: none;
+    }
+
+    &:nth-child(2) .others__text {
+      width: 133px;
+      margin: 0 auto;
     }
   }
 
@@ -59,15 +66,14 @@
     width: 124px;
     margin: 0 auto;
     font-size: 21px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   .others__number {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
   }
 
   .others__text {
-    display: block;
     width: 160px;
     margin: 0 auto;
   }
@@ -76,16 +82,21 @@
 @media (min-width: @desktop-width) {
   .others__item {
     width: 400px;
-    padding-top: 48px;
+    padding-top: 46px;
     padding-bottom: 66px;
+
+    &:nth-child(2) .others__text {
+      width: 265px;
+      margin: 0 auto;
+    }
   }
 
   .others__title {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .others__number {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .others__text {
