@@ -1,6 +1,7 @@
 .impression__title {
   .reset();
   .middle-font();
+  margin-bottom: 37px;
 }
 
 .impression__list {
@@ -8,11 +9,123 @@
   .reset();
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 27px;
+}
+
+.impression__item {
+  padding-left: 79px;
 }
 
 .impression__label {
+  position: relative;
+  display: block;
   .middle-font();
   text-align: left;
   text-transform: none;
+  margin-bottom: 43px;
+  cursor: pointer;
+}
+
+.impression__input + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -14px;
+  left: -79px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.impression__input + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.impression__input + label:active::before {
+  background-color: #d5d5d5;
+}
+
+.impression__input:checked + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -14px;
+  left: -79px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 18px solid #f2f2f2;
+  background-color: #333333;
+}
+
+.impression__input:checked + label:hover::before {
+  border-color: #e5e5e5;
+}
+
+.impression__input:checked + label:active::before {
+  border-color: #d5d5d5;
+  background-color: #a4a4a4;
+}
+
+@media (min-width: @tablet-width) {
+  .impression__title {
+    font-size: 21px;
+    text-align: left;
+    margin-bottom: 73px;
+  }
+
+  .impression__list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .impression__item {
+    padding-left: 76px;
+  }
+
+  .impression__label {
+    margin-bottom: 52px;
+  }
+
+  .impression__input + label::before {
+    top: -12px;
+    left: -76px;
+  }
+
+  .impression__input:checked + label::before {
+    top: -12px;
+    left: -76px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression__title {
+    font-size: 21px;
+    text-align: left;
+    margin-left: 80px;
+    margin-bottom: 71px;
+  }
+
+  .impression__list {
+    padding-left: 4px;
+    padding-right: 0;
+  }
+
+  .impression__item {
+    padding-left: 76px;
+  }
+
+  .impression__label {
+    margin-bottom: 52px;
+  }
+
+  .impression__input + label::before {
+    top: -12px;
+    left: -76px;
+  }
+
+  .impression__input:checked + label::before {
+    top: -12px;
+    left: -76px;
+  }
 }
