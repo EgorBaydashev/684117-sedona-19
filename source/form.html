@@ -74,7 +74,7 @@
               <legend class="contact-info__title">Контактная информация:</legend>
               <ul class="contact-info__list">
                 <li class="contact-info__item">
-                  <label class="contact-info__label" for="tel">Контактный телефон*:</label>
+                  <label class="contact-info__label" for="tel"><span class="contact-info__del">Контактный</span> телефон*:</label>
                   <div class="contact-info__block">
                     <input class="contact-info__input" id="tel" type="tel" name="tel" value="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     <span class="contact-info__unit contact-info__unit--icon-phone"></span>
@@ -93,15 +93,15 @@
               <legend class="impression__title">Ваше общее впечатление:</legend>
               <ul class="impression__list">
                 <li class="impression__item">
-                  <input class="impression__input" type="radio" id="positiv" name="impression" value="positiv" checked>
+                  <input class="impression__input visually-hidden" type="radio" id="positiv" name="impression" value="positiv" checked>
                   <label class="impression__label" for="positiv">Скорее положительное</label>
                 </li>
                 <li class="impression__item">
-                  <input class="impression__input" type="radio" id="negative" name="impression" value="negative">
+                  <input class="impression__input visually-hidden" type="radio" id="negative" name="impression" value="negative">
                   <label class="impression__label" for="negative">Скорее отрицательное</label>
                 </li>
                 <li class="impression__item">
-                  <input class="impression__input" type="radio" id="unknown" name="impression" value="unknown">
+                  <input class="impression__input visually-hidden" type="radio" id="unknown" name="impression" value="unknown">
                   <label class="impression__label" for="unknown">Затрудняюсь ответить</label>
                 </li>
               </ul>
@@ -110,19 +110,19 @@
               <legend class="visits__title">Посещенные достопримечательности:</legend>
               <ul class="visits__list">
                 <li class="visits__item">
-                  <input class="visits__input" type="checkbox" id="bridge" name="bridge" checked>
+                  <input class="visits__input visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
                   <label class="visits__label" for="bridge">Мост Дьявола</label>
                 </li>
                 <li class="visits__item">
-                  <input class="visits__input" type="checkbox" id="mountain" name="mountain" checked>
+                  <input class="visits__input visually-hidden" type="checkbox" id="mountain" name="mountain" checked>
                   <label class="visits__label" for="mountain">Гора-Колокол</label>
                 </li>
                 <li class="visits__item">
-                  <input class="visits__input" type="checkbox" id="park" name="park" checked>
+                  <input class="visits__input visually-hidden" type="checkbox" id="park" name="park" checked>
                   <label class="visits__label" for="park">Слайд-парк</label>
                 </li>
                 <li class="visits__item">
-                  <input class="visits__input" type="checkbox" id="rocks" name="rocks">
+                  <input class="visits__input visually-hidden" type="checkbox" id="rocks" name="rocks">
                   <label class="visits__label" for="rocks">Красные скалы</label>
                 </li>
               </ul>
@@ -143,7 +143,8 @@
             <div class="success-popup">
               <div class="success-popup__message">
                 <h2 class="success-popup__title">Ваш отзыв отправлен!</h2>
-                <p class="success-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+                <p class="success-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+В ближайшее время мы опубликуем его на сайте.</p>
               </div>
               <div class="success-popup__close">
                 <button class="success-popup__btn" type="button">Закрыть окно</button>
