@@ -1,6 +1,7 @@
 .visits__title {
   .reset();
   .middle-font();
+  margin-bottom: 30px;
 }
 
 .visits__list {
@@ -8,11 +9,116 @@
   .reset();
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 27px;
+}
+
+.visits__item {
+  padding-left: 79px;
 }
 
 .visits__label {
+  position: relative;
+  display: block;
   .middle-font();
   text-align: left;
   text-transform: none;
+  margin-bottom: 54px;
+  cursor: pointer;
+}
+
+.visits__item:last-child {
+  margin-bottom: -12px;
+}
+
+.visits__input + label::before {
+  position: absolute;
+  content: "";
+  top: -13px;
+  left: -79px;
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.visits__input + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.visits__input + label:active::before {
+  background-color: #d5d5d5;
+}
+
+.visits__input:checked + label::before {
+  position: absolute;
+  content: "";
+  top: -13px;
+  left: -79px;
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 19px;
+  background-position: 16px 19px;
+}
+
+.visits__input:checked + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.visits__input:checked + label:active::before {
+  background-color: #d5d5d5;
+}
+
+@media (min-width: @tablet-width) {
+  .visits {
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .visits__title {
+    font-size: 21px;
+    width: 270px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .visits__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 93px;
+    padding-right: 0;
+    margin-bottom: 23px;
+  }
+
+  .visits__item {
+    width: 150px;
+    padding-left: 80px;
+    padding-right: 30px;
+  }
+
+  .visits__label {
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .visits__item {
+    width: auto;
+    padding-left: 79px;
+    padding-right: 0;
+  }
 }
