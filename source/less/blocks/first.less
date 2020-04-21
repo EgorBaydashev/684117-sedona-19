@@ -65,13 +65,6 @@
   .first__picture {
     width: 512px;
     min-height: 256px;
-    background-image: url("../../img/main-city-tablet@1x.jpg");
-    background-size: 512px 256px;
-    background-repeat: no-repeat;
-  }
-
-  .first__photo {
-    display: none;
   }
 }
 
@@ -96,9 +89,14 @@
   }
 
   .first__picture {
+    position: relative;
     width: 800px;
-    background-image: url("../../img/main-city-desktop@1x.jpg");
-    background-size: 800px 400px;
-    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .first__photo {
+    position: absolute;
+    top: -72px;
+    left: 0;
   }
 }

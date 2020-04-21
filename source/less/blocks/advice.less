@@ -8,6 +8,31 @@
   padding-top: 37px;
   padding-left: 70px;
   padding-right: 20px;
+  position: relative;
+
+  &--house .advice__icon {
+    position: absolute;
+    top: 60px;
+    left: 43px;
+    fill: @blue;
+    zoom: 0.5;
+  }
+
+  &--souvenir .advice__icon {
+    position: absolute;
+    top: 58px;
+    left: 50px;
+    fill: @blue;
+    zoom: 0.5;
+  }
+
+  &--food .advice__icon {
+    position: absolute;
+    top: 68px;
+    left: 41px;
+    fill: @blue;
+    zoom: 0.5;
+  }
 }
 
 .advice__title {
@@ -35,6 +60,22 @@
     padding-top: 159px;
     padding-left: 0;
     padding-right: 0;
+
+    &--house .advice__icon {
+      left: 89px;
+      zoom: 1;
+    }
+
+    &--souvenir .advice__icon {
+      left: 96px;
+      zoom: 1;
+    }
+
+    &--food .advice__icon {
+      top: 63px;
+      left: 90px;
+      zoom: 1;
+    }
 
     &:first-child .advice__text {
       width: 156px;
@@ -76,6 +117,18 @@
     width: 400px;
     padding-top: 160px;
     padding-bottom: 82px;
+
+    &--house .advice__icon {
+      left: 162px;
+    }
+
+    &--souvenir .advice__icon {
+      left: 168px;
+    }
+
+    &--food .advice__icon {
+      left: 162px;
+    }
 
     &:first-child .advice__text {
       width: 256px;
