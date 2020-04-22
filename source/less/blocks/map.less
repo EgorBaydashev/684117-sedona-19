@@ -1,19 +1,32 @@
 .map {
   width: 320px;
   height: 350px;
+  margin-bottom: 10px;
   background-color: #cce0a4;
   background-image: url("../../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px 350px;
-  margin-bottom: 10px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-color: #cce0a4;
+    background-image: url("../../img/bg-map-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px 350px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .map {
     width: 768px;
+    margin-bottom: 0;
     background-image: url("../../img/bg-map-tablet@1x.jpg");
     background-size: 768px 350px;
-    margin-bottom: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-color: #cce0a4;
+      background-image: url("../../img/bg-map-tablet@2x.jpg");
+      background-size: 768px 350px;
+    }
   }
 
   .map__block {
@@ -27,6 +40,11 @@
     width: 1200px;
     background-image: url("../../img/bg-map-desktop@1x.jpg");
     background-size: 1200px 350px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.jpg");
+      background-size: 1200px 350px;
+    }
   }
 
   .map__block {
