@@ -1,7 +1,5 @@
 .failure-popup {
-  position: absolute;
-  top: 1000px;
-  left: center;
+  display: none;
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
@@ -9,14 +7,6 @@
   padding-top: 42px;
   background-color: @white;
   box-shadow: 0 4px 10px 0 #e1e1e1;
-}
-
-.failure-show {
-  display: block;
-}
-
-.failure-close {
-  display: none;
 }
 
 .failure-popup__title {
@@ -61,10 +51,7 @@
 
 @media (min-width: @tablet-width) {
   .failure-popup {
-    display: none;
-    box-sizing: border-box;
     width: 400px;
-    margin: 0 auto;
     padding-bottom: 49px;
     padding-top: 59px;
     padding-left: 61px;
