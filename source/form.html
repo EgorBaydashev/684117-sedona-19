@@ -4,16 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="./js/picturefill-min.js" async></script>
+    <script src="./js/picturefill-min.js" async=""></script>
     <script src="./js/svg4everybody.min.js"></script>
     <script>svg4everybody(); // run it now or whenever you are ready</script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="page-container">
       <header class="page-header page-header--menu-opened page-header--nojs">
         <a class="page-header__logo" href="index.html">
@@ -25,13 +32,13 @@
         </a>
         <button class="page-header__toggle" type="button" aria-label="Открыть меню">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve" aria-hidden="true">
-            <use xlink:href="./img/sprite.svg#menu-open"></use>
+            <use xlink:href="./img/sprite.svg#icon-menu"></use>
           </svg>
         </button>
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Закрыть меню">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve" aria-hidden="true">
-              <use xlink:href="./img/sprite.svg#menu-close"></use>
+              <use xlink:href="./img/sprite.svg#icon-cross"></use>
             </svg>
           </button>
           <div class="main-nav__wrapper">
@@ -65,11 +72,11 @@
               <ul class="name__list">
                 <li class="name__item">
                   <label class="name__label" for="name-name">Имя*:</label>
-                  <input class="name__input" id="name-name" type="text" name="name-name" value="Петр" required>
+                  <input class="name__input" id="name-name" type="text" name="name-name" value="Петр" required="">
                 </li>
                 <li class="name__item">
                   <label class="name__label" for="name-surname">Фамилия*:</label>
-                  <input class="name__input" id="name-surname" type="text" name="name-surname" value="Иванов" required>
+                  <input class="name__input" id="name-surname" type="text" name="name-surname" value="Иванов" required="">
                 </li>
                 <li class="name__item">
                   <label class="name__label" for="name-patronymic">Отчество:</label>
@@ -83,14 +90,14 @@
                 <li class="contact-info__item">
                   <label class="contact-info__label" for="tel"><span class="contact-info__del">Контактный</span> телефон*:</label>
                   <div class="contact-info__block">
-                    <input class="contact-info__input" id="tel" type="tel" name="tel" value="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <input class="contact-info__input" id="tel" type="tel" name="tel" value="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
                     <span class="contact-info__unit contact-info__unit--icon-phone"></span>
                   </div>
                 </li>
                 <li class="contact-info__item">
                   <label class="contact-info__label" for="email">Электронная почта*:</label>
                   <div class="contact-info__block">
-                    <input class="contact-info__input" id="email" type="email" name="email" value="Введите e-mail" required>
+                    <input class="contact-info__input" id="email" type="email" name="email" value="Введите e-mail" required="">
                     <span class="contact-info__unit contact-info__unit--icon-mail"></span>
                   </div>
                 </li>
@@ -100,7 +107,7 @@
               <legend class="impression__title">Ваше общее впечатление:</legend>
               <ul class="impression__list">
                 <li class="impression__item">
-                  <input class="impression__input visually-hidden" type="radio" id="positiv" name="impression" value="positiv" checked>
+                  <input class="impression__input visually-hidden" type="radio" id="positiv" name="impression" value="positiv" checked="">
                   <label class="impression__label" for="positiv">Скорее положительное</label>
                 </li>
                 <li class="impression__item">
@@ -118,7 +125,7 @@
               <ul class="visits__list">
                 <li class="visits__item">
                   <label class="visits__label">
-                    <input class="visits__input visually-hidden" type="checkbox" name="bridge" checked>
+                    <input class="visits__input visually-hidden" type="checkbox" name="bridge" checked="">
                     <svg class="visits__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve" aria-hidden="true">
                       <use class="visits__tick" xlink:href="./img/sprite.svg#icon-tick"></use>
                     </svg>
@@ -127,7 +134,7 @@
                 </li>
                 <li class="visits__item">
                   <label class="visits__label">
-                    <input class="visits__input visually-hidden" type="checkbox" name="mountain" checked>
+                    <input class="visits__input visually-hidden" type="checkbox" name="mountain" checked="">
                     <svg class="visits__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve" aria-hidden="true">
                       <use class="visits__tick" xlink:href="./img/sprite.svg#icon-tick"></use>
                     </svg>
@@ -136,7 +143,7 @@
                 </li>
                 <li class="visits__item">
                   <label class="visits__label">
-                    <input class="visits__input visually-hidden" type="checkbox" name="park" checked>
+                    <input class="visits__input visually-hidden" type="checkbox" name="park" checked="">
                     <svg class="visits__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve" aria-hidden="true">
                       <use class="visits__tick" xlink:href="./img/sprite.svg#icon-tick"></use>
                     </svg>
@@ -205,13 +212,12 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на разработчика htmlacademy">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" aria-hidden="true">
-              <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="./img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </footer>
     </div>
     <script src="js/menu.js"></script>
-    <script src="js/form.js"></script>
   </body>
 </html>
