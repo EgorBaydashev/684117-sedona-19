@@ -85,12 +85,12 @@ gulp.task("html", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "sourse/fonts/**/*.{woff,woff2}",
-    "sourse/img/**",
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
     "source/js/**",
-    "sourse/*.ico"
+    "source/*.ico"
   ], {
-    base: "sourse"
+    base: "source"
   })
     .pipe(gulp.dest("build"));
 });
