@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
@@ -14,6 +18,9 @@
     <script>svg4everybody(); // run it now or whenever you are ready</script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="page-container">
       <header class="page-header page-header--menu-opened page-header--nojs">
         <a class="page-header__logo" href="index.html">
@@ -25,13 +32,13 @@
         </a>
         <button class="page-header__toggle" type="button" aria-label="Открыть меню">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve" aria-hidden="true">
-            <use xlink:href="./img/sprite.svg#menu-open"></use>
+            <use xlink:href="./img/sprite.svg#icon-menu"></use>
           </svg>
         </button>
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Закрыть меню">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve" aria-hidden="true">
-              <use xlink:href="./img/sprite.svg#menu-close"></use>
+              <use xlink:href="./img/sprite.svg#icon-cross"></use>
             </svg>
           </button>
           <div class="main-nav__wrapper">
@@ -188,17 +195,17 @@
               <div class="menu__toggles toggles">
                 <span class="toggles__replay">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve" aria-hidden="true">
-                    <use xlink:href="./img/sprite.svg#icon-replay"></use>
+                    <use xlink:href="./img/sprite.svg#icon-video-replay"></use>
                   </svg>
                 </span>
                 <span class="toggles__subtitles">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20" xml:space="preserve" aria-hidden="true">
-                    <use xlink:href="./img/sprite.svg#icon-subtitles"></use>
+                    <use xlink:href="./img/sprite.svg#icon-video-subtitles"></use>
                   </svg>
                 </span>
                 <span class="toggles__fullscreen">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" aria-hidden="true">
-                    <use xlink:href="./img/sprite.svg#icon-fullscreen"></use>
+                    <use xlink:href="./img/sprite.svg#icon-video-fullscreen"></use>
                   </svg>
                 </span>
               </div>
@@ -231,7 +238,7 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на разработчика htmlacademy">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" aria-hidden="true">
-              <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="./img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
